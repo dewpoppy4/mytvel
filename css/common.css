@@ -1,0 +1,257 @@
+:root{
+  --teal: #2ec1ac;
+  --teal_hover: #279e8c;
+}
+
+/* General Styles */
+* {
+  font-family: 'Kanit', sans-serif;
+}
+
+.h-font {
+  font-family: 'Kanit', cursive;
+}
+
+/* Remove number input arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Custom Background */
+.custom-bg {
+  background-color: var(--teal);
+  border: 1px solid var(--teal);
+}
+
+.custom-bg:hover {
+  background-color: var(--teal_hover);
+  border-color: var(--teal_hover);
+}
+
+/* Horizontal Line */
+.h-line {
+  width: 150px;
+  margin: 0 auto;
+  height: 1.7px;
+}
+
+/* Alert */
+.custom-alert {
+  position: fixed;
+  top: 80px;
+  right: 25px;
+  z-index: 1111;
+}
+
+/* Rating Styles */
+.rating-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.rating-stars {
+  font-size: 2rem;
+  color: #ffc107;
+  margin-bottom: 1rem;
+}
+
+.rating-label {
+  width: 80px;
+  font-size: 14px;
+}
+
+.rating-count {
+  width: 50px;
+  text-align: right;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Progress Bar */
+.progress {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  height: 8px;
+  margin: 0 10px;
+}
+
+.progress-bar {
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+/* Card Styles */
+.card {
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.review-header {
+  background: linear-gradient(to right, var(--teal), var(--teal_hover));
+  color: white;
+  padding: 1.5rem;
+  border-radius: 15px 15px 0 0;
+  margin: -1rem -1rem 1rem -1rem;
+}
+
+/* Description Box */
+.description-box {
+  max-height: 300px;
+  overflow-y: auto;
+  text-indent: 2em;
+  white-space: pre-line;
+  line-height: 1.7;
+  color: #444;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.description-box p {
+  margin: 0;
+}
+
+/* Scrollbar Styles */
+.description-box::-webkit-scrollbar {
+  width: 8px;
+}
+
+.description-box::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 8px;
+}
+
+.description-box::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+}
+
+.description-box::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Reviews */
+.review-item {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+.review-item:last-child {
+  border-bottom: none;
+}
+
+.review-item .rating {
+  font-size: 14px;
+}
+
+/* Carousel */
+.carousel-item img {
+  object-fit: cover;
+  height: 400px;
+}
+
+.rating .stars {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.rating .text-muted {
+  font-size: 14px;
+}
+
+.rating .bi-star-fill,
+.rating .bi-star {
+  margin-right: 2px;
+}
+
+.review-card {
+  transition: transform 0.2s;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+.review-text {
+  color: #555;
+  line-height: 1.6;
+  text-indent: 1em;
+}
+
+.rating i {
+  font-size: 14px;
+}
+
+.review-card img {
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.review-card {
+  transition: transform 0.2s;
+  background-color: #fff;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+.review-text {
+  color: #555;
+  line-height: 1.6;
+  text-indent: 1em;
+}
+
+.rating-summary .stars {
+  font-size: 24px;
+}
+
+.rating-label {
+  width: 60px;
+  font-size: 14px;
+}
+
+.rating-count {
+  width: 30px;
+  text-align: right;
+  font-size: 14px;
+}
+
+.progress {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.progress-bar {
+  border-radius: 10px;
+}
+.description p {
+  margin-bottom: 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card .img-fluid {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
